@@ -14,6 +14,7 @@ class Bootstrap
         (new ConfigureServiceProvider($application))->boot();
 
         // 载入其他核心服务
+        // 此服务用于包其他服务和容器之间的绑定
         $providers = $application->make('config')->get('app.providers');
         foreach ($providers as $provider) {
             (new $provider($application))->register();

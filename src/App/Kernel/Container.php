@@ -23,13 +23,41 @@ use Exception;
  */
 interface ContainerInterface {
 
-    // 服务注册
+    /**
+     * 服务注册
+     *
+     * @param $abstract
+     * @param null $concrete
+     * @param false $shared
+     * @return mixed
+     */
     public function bind($abstract, $concrete = null, $shared = false);
 
-    // 服务解析
+    /**
+     * 单例服务注册
+     *
+     * @param $abstract
+     * @param null $concrete
+     * @return mixed
+     */
+    public function singleton($abstract, $concrete = null);
+
+    /**
+     * 服务解析
+     *
+     * @param $abstract
+     * @param array $parameters
+     * @return mixed
+     */
     public function resolve($abstract, $parameters = []);
 
-    // 服务解析
+    /**
+     * 服务解析
+     *
+     * @param $abstract
+     * @param array $parameters
+     * @return mixed
+     */
     public function make($abstract, $parameters = []);
 
 }
@@ -62,7 +90,7 @@ class Container implements ContainerInterface {
      */
     static public function getInstance() {
         if(empty(self::$instance)) {
-            self::$instance = new static();
+            self::$instance = new static;
         }
         return self::$instance;
     }
@@ -83,7 +111,7 @@ class Container implements ContainerInterface {
      *
      * @param string $abstract 服务名称
      * @param Closure|string|null $concrete 类的对象
-     * @param bool $shared
+     * @param bool $shared 判断是否用单例模式
      */
     public function bind($abstract, $concrete = null, $shared = false)
     {
@@ -96,7 +124,19 @@ class Container implements ContainerInterface {
         }
 
         // 容器绑定
+        // compact — 建立一个数组，包括变量名和它们的值
         $this->bindings[$abstract] = compact('concrete', 'shared');
+    }
+
+    /**
+     * 容器注册单例服务
+     *
+     * @param string $abstract 服务名称
+     * @param Closure|string|null $concrete 类的对象
+     */
+    public function singleton($abstract, $concrete = null)
+    {
+        return $this->bind($abstract, $concrete, true);
     }
 
     /**
@@ -169,7 +209,7 @@ class Container implements ContainerInterface {
      * @param string $abstract 服务名
      * @return mixed
      */
-    private function getConcrete($abstract) {
+    private function getConcrete(string $abstract) {
         if(!isset($this->bindings[$abstract])) {
             return $abstract;
         }

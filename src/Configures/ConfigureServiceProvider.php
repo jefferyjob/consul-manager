@@ -11,6 +11,8 @@ class ConfigureServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->application->bind('config', new Configure());
+        $this->application->bind('config', function() {
+            return new Configure();
+        });
     }
 }
