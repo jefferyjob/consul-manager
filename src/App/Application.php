@@ -29,11 +29,17 @@ class Application extends Container {
      */
     public $token;
 
+    /**
+     * @var bool 是否用swoole-http进行通信
+     */
+    public $swoole_http;
+
     public function __construct($config) {
         // 配置定义
         $this->host = $config['host'];
         $this->host = $config['port'];
         $this->token = $config['token'];
+        $this->swoole_http = $config['swoole_http'];
 
         // 加载核心
         $this->bootstrap();
