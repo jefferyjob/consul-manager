@@ -1,8 +1,5 @@
 <?php
-
-
 namespace ConsulManager\Servers\Http;
-
 
 use ConsulManager\App\Application;
 
