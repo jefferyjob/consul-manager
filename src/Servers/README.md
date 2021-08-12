@@ -1,11 +1,11 @@
-# consul服务接口实现
+# Consul服务接口实现
 
 ## 文档
 
 - 官网文档：[https://www.consul.io/docs](https://www.consul.io/docs)
 - 中文文档：[https://yushuai-w.gitbook.io/consul](https://yushuai-w.gitbook.io/consul)
 
-## consul介绍
+## Consul介绍
 
 Consul是一个服务网格解决方案，提供了一个功能齐全的控制平面，具有服务发现、配置和隔离功能。这些功能中的每一项都可以根据需要单独使用，也可以一起使用来构建一个完整的服务网格。Consul需要一个数据平面，并支持代理和原生集成模型。Consul提供了一个简单的内置代理，因此一切都可以开箱即用，但也支持第三方代理集成，如Envoy。 
 
@@ -15,7 +15,7 @@ Consul是一个服务网格解决方案，提供了一个功能齐全的控制�
 - 配置：服务必须能够从一个中心的配置源接收运行时的配置信息。
 - 隔离：服务之间的通信必须是被授权和加密的。
 
-## consul主要功能
+## Consul主要功能
 
 ### 服务发现
 Consul的客户端可以注册一个服务，比如api或mysql，其他客户端可以使用Consul来发现特定服务的提供者。使用DNS或HTTP，应用程序可以很容易地找到他们所依赖的服务。
