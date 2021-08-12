@@ -25,7 +25,7 @@ consul-manager 安装完成后，使用 `vendor:publish Artisan` 命令来生成
 此外，还会在框架文件 `framework/config/app.php` 的 `providers` 和 `aliases` 注入服务。
 
 ```shell
-php artisan vendor:publish --provider="Jefferyjob\ConsulManager\Providers\ConsulManagerServiceProvider"
+php artisan vendor:publish --provider="ConsulManager\Providers\ConsulManagerServiceProvider"
 ```
 
 
