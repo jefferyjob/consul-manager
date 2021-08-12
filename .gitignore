@@ -1,6 +1,6 @@
 # Composer files
 composer.phar
-composer.json
+composer.lock
 vendor/
 
 # Edit Data

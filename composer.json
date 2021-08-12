@@ -1,0 +1,32 @@
+{
+    "name": "jefferyjob/consul-manager",
+    "type": "library",
+    "description": "Laravel consumer management extension library",
+    "keywords": ["comsul-manager", "consul", "laravel"],
+    "homepage": "https://github.com/jefferyjob/consul-manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "libin",
+            "email": "libinjob@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8.5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConsulManager\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ConsulManager\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
