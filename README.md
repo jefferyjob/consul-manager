@@ -4,7 +4,7 @@ Laravel 的 consul 服务管理扩展包
 
 ## Label
 
-[![laravel](https://img.shields.io/badge/laravel-%3E1.9-red)](https://laravel.com)
+[![laravel](https://img.shields.io/badge/laravel-%3E5.6-red)](https://laravel.com)
 [![php](https://img.shields.io/badge/php-%3E7.0-blue)](https://www.php.net)
 [![consul](https://img.shields.io/badge/consul-%3E1.9-red)](https://www.consul.io)
 [![issues](https://img.shields.io/github/issues/jefferyjob/consul-manager)](https://github.com/jefferyjob/consul-manager/issues)
