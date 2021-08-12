@@ -1,5 +1,5 @@
 <?php
-namespace Jefferyjob\ConsulManager\Services;
+namespace Jefferyjob\ConsulManager\Servers\Services;
 
 use Jefferyjob\ConsulManager\App\Kernel\ServerPriovderInterface;
 
