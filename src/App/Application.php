@@ -24,10 +24,16 @@ class Application extends Container {
      */
     public $port;
 
+    /**
+     * @var string consul token
+     */
+    public $token;
+
     public function __construct($config) {
         // 配置定义
         $this->host = $config['host'];
         $this->host = $config['port'];
+        $this->token = $config['token'];
 
         // 加载核心
         $this->bootstrap();

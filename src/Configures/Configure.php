@@ -41,7 +41,7 @@ class Configure
         $data = array();
         foreach ($files as $file)
         {
-            if ($file === '.' || $file === '..' || $file == 'consul_manager.php') {
+            if ($file === '.' || $file === '..') {
                 continue;
             }
 
