@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Jefferyjob\ConsulManager\Servers\Http;
+namespace ConsulManager\Servers\Http;
 
 
-use Jefferyjob\ConsulManager\App\Application;
+use ConsulManager\App\Application;
 
 class HttpCurl implements HttpInterface
 {

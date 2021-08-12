@@ -1,9 +1,9 @@
 <?php
-namespace Jefferyjob\ConsulManager\Servers\Kvs;
+namespace ConsulManager\Servers\Nodes;
 
-use Jefferyjob\ConsulManager\App\Kernel\ServerPriovderInterface;
+use ConsulManager\App\Kernel\ServiceProvider;
 
-class KvServerPriover extends ServerPriovderInterface
+class NodeServicePriover extends ServiceProvider
 {
     public function boot()
     {

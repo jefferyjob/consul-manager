@@ -1,9 +1,9 @@
 <?php
-namespace Jefferyjob\ConsulManager\Providers;
+namespace ConsulManager\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Jefferyjob\ConsulManager\App\Application;
-use Jefferyjob\ConsulManager\Exceptions\Exception;
+use ConsulManager\App\Application;
+use ConsulManager\Exceptions\Exception;
 
 /*
 |--------------------------------------------------------------------------

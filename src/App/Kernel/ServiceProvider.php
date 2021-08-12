@@ -1,7 +1,7 @@
 <?php
-namespace Jefferyjob\ConsulManager\App\Kernel;
+namespace ConsulManager\App\Kernel;
 
-use Jefferyjob\ConsulManager\App\Application;
+use ConsulManager\App\Application;
 
 /**
  * --------------------------------------------------------------------------
@@ -11,7 +11,7 @@ use Jefferyjob\ConsulManager\App\Application;
  * 定义抽象接口
  * 用户其他服务提供者继承
  */
-abstract class ServerPriovderInterface
+abstract class ServiceProvider
 {
     /**
      * @var Application

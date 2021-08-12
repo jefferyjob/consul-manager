@@ -1,8 +1,8 @@
 <?php
-namespace Jefferyjob\ConsulManager\App\Kernel;
+namespace ConsulManager\App\Kernel;
 
-use Jefferyjob\ConsulManager\App\Application;
-use Jefferyjob\ConsulManager\Configures\ConfigureServerPriovder;
+use ConsulManager\App\Application;
+use ConsulManager\Configures\ConfigureServiceProvider;
 
 class Bootstrap
 {
@@ -10,8 +10,8 @@ class Bootstrap
     {
         // 配置文件服务容器载入
         // 只有载入配置文件服务才可以读取到配置文件中要加载的其他服务信息
-        (new ConfigureServerPriovder($application))->register();
-        (new ConfigureServerPriovder($application))->boot();
+        (new ConfigureServiceProvider($application))->register();
+        (new ConfigureServiceProvider($application))->boot();
 
         // 载入其他核心服务
         $providers = $application->make('config')->get('app.providers');

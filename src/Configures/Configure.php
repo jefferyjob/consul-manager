@@ -1,7 +1,7 @@
 <?php
-namespace Jefferyjob\ConsulManager\Configures;
+namespace ConsulManager\Configures;
 
-use Jefferyjob\ConsulManager\Exceptions\ResourceException;
+use ConsulManager\Exceptions\ResourceException;
 
 /**
  * --------------------------------------------------------------------------

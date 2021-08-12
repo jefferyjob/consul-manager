@@ -1,5 +1,5 @@
 <?php
-namespace Jefferyjob\ConsulManager\App\Kernel;
+namespace ConsulManager\App\Kernel;
 
 use Closure;
 use ReflectionClass;

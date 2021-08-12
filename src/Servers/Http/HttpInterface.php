@@ -1,5 +1,5 @@
 <?php
-namespace Jefferyjob\ConsulManager\Servers\Http;
+namespace ConsulManager\Servers\Http;
 
 /**
  * --------------------------------------------------------------------------

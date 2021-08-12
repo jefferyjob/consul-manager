@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Jefferyjob\ConsulManager\Exceptions;
+namespace ConsulManager\Exceptions;
 
 
 class ResourceException extends Exception

@@ -15,9 +15,9 @@ return [
         /*
          * Package Service Providers...
          */
-        Jefferyjob\ConsulManager\Servers\Services\ServiceServerPriovder::class,
-        Jefferyjob\ConsulManager\Servers\Kvs\KvServerPriover::class,
-        Jefferyjob\ConsulManager\Servers\Nodes\NodeServerPriover::class,
+        ConsulManager\Servers\Services\ServiceServiceProvider::class,
+        ConsulManager\Servers\Kvs\KvServicePriover::class,
+        ConsulManager\Servers\Nodes\NodeServicePriover::class,
 
     ]
 ];

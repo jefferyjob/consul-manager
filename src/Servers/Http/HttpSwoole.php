@@ -1,7 +1,7 @@
 <?php
-namespace Jefferyjob\ConsulManager\Servers\Http;
+namespace ConsulManager\Servers\Http;
 
-use Jefferyjob\ConsulManager\App\Application;
+use ConsulManager\App\Application;
 use Swoole\Coroutine\Http\Client;
 /**
  * --------------------------------------------------------------------------
@@ -10,7 +10,7 @@ use Swoole\Coroutine\Http\Client;
  *
  * wiki：https://wiki.swoole.com/#/coroutine_client/http_client
  */
-class HttpSwoole implements HttpInterface
+class HttpSwoole extends Http implements HttpInterface
 {
     /**
      * @var string consul token

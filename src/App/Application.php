@@ -1,8 +1,8 @@
 <?php
-namespace Jefferyjob\ConsulManager\App;
+namespace ConsulManager\App;
 
-use Jefferyjob\ConsulManager\App\Kernel\Container;
-use Jefferyjob\ConsulManager\App\Kernel\Bootstrap;
+use ConsulManager\App\Kernel\Container;
+use ConsulManager\App\Kernel\Bootstrap;
 
 /**
  * --------------------------------------------------------------------------
